@@ -1,0 +1,128 @@
+.briefHead {
+  font-size: 28px;
+  font-weight: 549;
+  font-family: sans-serif;
+}
+
+.brief {
+  height: 456px;
+  width: 100%;
+}
+.briefHeadLine1 {
+  width: 250px;
+  height: 5px;
+  background-color: #b97628;
+}
+.briefHeadLine2 {
+  width: 250px;
+  height: 5px;
+  background-color: #212124;
+}
+.briefHeadContainer {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.briefHeadLines {
+  display: flex;
+  padding-bottom: 50px;
+}
+.briefLeft {
+  width: 50%;
+  padding-right: 70px;
+  height: 455px;
+  padding-left: 5%;
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.briefLeftHead {
+  font-size: 28px;
+  color: #ae674c;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.brieRight {
+  width: 50%;
+  height: 456px;
+  padding-right: 5%;
+}
+.briefContents {
+  display: flex;
+  width: 100%;
+  height: 470px;
+}
+.brieRight img {
+  width: 683px;
+  height: 455px;
+}
+.hyginContents {
+  height: 683px;
+  width: 100%;
+}
+.hyginLeft img {
+  width: 683px;
+  height: 455px;
+}
+.hyginLeft {
+  width: 50%;
+  padding-right: 70px;
+  height: 455px;
+  padding-left: 5%;
+}
+.hyginRightHead {
+  font-size: 28px;
+  color: #ae674c;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.hyginRight {
+  width: 50%;
+  padding-right: 70px;
+  height: 455px;
+  padding-left: 5%;
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hyginContents {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.facilitiesLast {
+  height: 300px;
+  width: 100%;
+
+  background-image: url("../../assets/bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.facilitiesLast p {
+  position: absolute;
+  top: 40%;
+
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0px 75px;
+  color: white;
+  text-align: center;
+}

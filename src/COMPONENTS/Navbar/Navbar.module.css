@@ -1,0 +1,172 @@
+.navParent {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+.navTop {
+  width: 100%;
+  padding: 8px 130px;
+  background-color: #b7761d;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.help {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navTop .help p {
+  color: white;
+}
+.help button {
+  border: 1px solid #c4c4c4;
+  padding: 0px 5px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  font-weight: 500;
+  width: 145px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+}
+.help img {
+  padding-right: 5px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+.navBottom {
+  display: flex;
+  height: 85px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 8px 130px;
+  background-color: #fff;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart p {
+  text-align: start;
+  padding-left: 8px;
+}
+.bigcart {
+  font-size: 15px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+.smallaed {
+  font-size: 10px;
+  color: #b7761d;
+}
+.cartwrap {
+  display: flex;
+}
+.center input {
+  margin-left: 10px;
+  margin-top: 3px;
+  color: #9ea1a5;
+  background-color: #f1f1f2;
+  width: 330px;
+  border: none;
+  outline: none;
+  margin-right: 15px;
+}
+
+.clearbutton button {
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  padding: 5px 5px;
+  border: none;
+  background-color: #b0b1b2;
+  color: white;
+  margin-right: 12px;
+}
+
+.center {
+  height: 81px;
+  width: 420px;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.center form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 420px;
+  height: 25px;
+  background-color: #f1f1f2;
+  text-align: center;
+
+  border-radius: 5px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+}
+.first {
+  display: flex;
+  gap: 5px;
+}
+.ship {
+  padding: 0px 0px 30px;
+}
+.loginuser {
+  display: flex;
+}
+.log {
+  color: #684f40;
+  text-align: center;
+  padding: 5px 5px;
+}
+.upperzerro {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #684f40;
+}
+.upperzerro p {
+  color: white;
+}
+
+.heart button {
+  background-color: #fff;
+  border: none;
+  height: 30px;
+  width: 32px;
+}
+.searchbox {
+  position: relative;
+}

@@ -1,0 +1,50 @@
+.full {
+  display: flex;
+  flex-direction: column;
+}
+.swiperParent {
+  height: 140px;
+  width: 140px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiperParent:hover {
+  cursor: pointer;
+  border: 2px solid #ae674c;
+}
+.swiperParent img {
+  width: 85%;
+  height: 85%;
+
+  border-radius: 50%;
+}
+.square {
+  height: 2px;
+  width: 150px;
+  background-color: #555;
+  margin-bottom: 30px;
+}
+.square :hover {
+  background-color: #ae674c;
+  cursor: pointer;
+}
+.full p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+.full .swiperParent:hover {
+  cursor: pointer;
+  transition: 1.5s;
+
+  border: 2px solid #ae674c;
+}
+.full .square:hover {
+  cursor: pointer;
+  background-color: #ae674c;
+}

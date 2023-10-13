@@ -1,0 +1,138 @@
+.home {
+  height: auto;
+  width: 100%;
+}
+.card {
+  display: flex;
+
+  padding: 20px 0;
+}
+.swiper2 {
+  padding: 30px 0;
+  margin: 0 10%;
+  position: relative;
+}
+
+.swiperp {
+  text-align: center;
+  color: #ae674c;
+  font-size: 33px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.shipparent {
+  display: flex;
+  margin: 0 20%;
+  width: 100%;
+  height: 77px;
+}
+.delivery {
+  display: flex;
+  gap: 20px;
+}
+.uae {
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  width: 1px;
+  height: 30px;
+  background-color: #cdd0d2;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.commitment {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px;
+}
+.commitment p {
+  padding-top: 5px;
+}
+.secure p {
+  padding-top: 5px;
+}
+.secure {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px;
+}
+.call {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+}
+.backgroundfullimage img {
+  width: 100%;
+}
+.mostpopular {
+  height: 485px;
+  width: 100%;
+  background-color: rgb(183, 118, 28, 0.2);
+}
+.mostpopular img {
+  width: 205px;
+  height: 208px;
+}
+.headingbutton {
+  display: flex;
+  flex-direction: column;
+}
+.headingbutton button {
+  background-color: #ae674c !important;
+  border: 1px solid #ae674c !important;
+  padding: 4px 10px;
+  color: white;
+  margin: 0 50%;
+  width: 80px;
+  height: 30px;
+  text-transform: uppercase;
+}
+.mostpopular p {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #ae674c;
+  font-size: 33px;
+  font-weight: 500;
+}
+.img1 {
+  width: 145px;
+  height: 80px;
+}
+.img2 {
+  width: 145px;
+  height: 60px;
+}
+.img3 {
+  width: 145px;
+  height: 45px;
+}
+.img4 {
+  width: 145px;
+  height: 55px;
+}
+.goldensites {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.otherGolden p {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 25px;
+}
+.card :hover {
+  cursor: pointer;
+   transition: 1.5s;
+}

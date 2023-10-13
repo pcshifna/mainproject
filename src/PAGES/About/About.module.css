@@ -1,0 +1,261 @@
+.about {
+  width: 100%;
+  height: auto;
+}
+.aboutChild p {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.aboutChild {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.aboutfirstp {
+  padding-bottom: 15px;
+}
+.longline1 {
+  width: 250px;
+  height: 5px;
+  background-color: #b97628;
+}
+.longline2 {
+  width: 250px;
+  height: 5px;
+  background-color: #212124;
+}
+.lines {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.passionContent {
+  width: 69%;
+  height: 292px;
+  padding-right: 55px;
+  text-align: justify;
+}
+.passionContent p {
+  font-size: 16.5px;
+  line-height: 1.5;
+}
+.headingPassion p {
+  color: #ae674c;
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.alignment {
+  display: flex;
+  padding: 0px 80px;
+  width: 100%;
+}
+.rightPassion {
+  width: 31%;
+  padding-bottom: 20px;
+}
+.rightPassion img {
+  object-fit: cover;
+  text-align: center;
+  width: 437px;
+  height: 297px;
+}
+.thisiscommitment {
+  height: 751px;
+  width: 100%;
+  padding: 48px 80px;
+  display: flex;
+  background-color: #f8f9fa;
+}
+.leftCommitment img {
+  height: 655px;
+  width: 440px;
+  object-fit: cover;
+  padding-right: 50px;
+}
+.rightCommitment {
+  height: 874px;
+  width: 70%;
+}
+.commitmentHeading p {
+  color: #ae674c;
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.contents {
+  padding-bottom: 10px;
+}
+.contents p {
+  color: #242319;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.3;
+}
+.full {
+  display: flex;
+}
+.commitmentSecondHeading {
+  color: #ae674c;
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.secondCommitmentFull {
+  color: #242319;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.3;
+  padding-bottom: 10px;
+}
+.squareColorsBlack,
+.squareColorsOrange {
+  padding-right: 53px;
+}
+.firstPoint {
+  display: flex;
+  flex-direction: row;
+}
+.upper {
+  padding-bottom: 10px;
+}
+.commitmentThdHeading {
+  color: #ae674c;
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.trainedImage {
+  height: 300px;
+  width: 100%;
+
+  background-image: url("../../assets/bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.contentsOnImage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+
+  color: white;
+  text-align: center;
+}
+.messageFromFounder {
+  padding: 48px 167px;
+  width: 100%;
+  height: 412px;
+  background-color: #f8f9fa;
+  display: flex;
+}
+.messageFromFounderLeft {
+  width: 72%;
+}
+.messageFromFounderContents {
+  text-align: justify;
+  padding-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.messageFromFounderHeading {
+  color: #ae674c;
+  font-weight: 500;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.team1 {
+  border-radius: 50%;
+  border: 1px solid #ae674c;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+.team img {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  border-radius: 50%;
+}
+.headteam {
+  padding-top: 20px;
+  color: #ae674c;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.firstarabi {
+  text-align: center;
+}
+.colorName {
+  color: #ae674c;
+  font-size: 20px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  padding-left: 20px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.nocolor {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 20px;
+  text-align: center;
+}
+.testimonials {
+  height: 298px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.small {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.big {
+  font-size: 28px;
+  color: #ae674c;
+  padding-bottom: 20px;
+}
+.boxSwiper {
+  background-color: #f8f9fa;
+  width: 800px;
+  height: 175px;
+}
+.swiperiIncContents {
+  font-size: 18px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #f8f9fa;
+  width: 800px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+}

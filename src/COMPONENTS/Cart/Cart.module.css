@@ -1,0 +1,156 @@
+.alignment {
+  width: 100%;
+  height: auto;
+  padding: 20px 50px;
+
+  display: flex;
+}
+
+.cartBox {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #eee;
+  display: flex;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+.mainCart {
+  width: 70%;
+  height: auto;
+}
+.imageSide {
+  padding: 10px 30px;
+}
+.productImage {
+  width: 142px;
+  height: 115px;
+}
+.productImage img {
+  width: 100%;
+  height: 100%;
+}
+.buttons p {
+  padding: 4px 15px;
+  background-color: #eeeded;
+  color: #684f40;
+  border: 1px solid #d9d9d9;
+}
+.buttons button {
+  padding: 4px 15px;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+}
+.buttons {
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+}
+.productDescription {
+  padding-top: 20px;
+}
+.productQuantity,
+.unitPrice,
+.totalPrice {
+  font-size: 13px;
+}
+.rowWishlist {
+  display: flex;
+  padding-top: 7px;
+}
+.unitPrice {
+  display: flex;
+  word-spacing: 3px;
+}
+.wishlist button,
+.delete button {
+  padding: 4px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.rowWishlist button:hover {
+  background-color: #efefef;
+  transition: 1s;
+}
+/* .wishlist img,
+.delete img {
+  background-color: aqua;
+} */
+
+.standLine {
+  width: 1px;
+  height: 30px;
+  background-color: #d9d9d9;
+  margin-right: 20px;
+}
+.wishlist {
+  padding-right: 20px;
+}
+
+.productTitle,
+.unitPrice {
+  color: #b37a64;
+}
+.productTitle,
+.productQuantity,
+.unitPrice,
+.totalPrice {
+  margin-bottom: 11px;
+}
+.orderSummary {
+  width: 30%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin: 40px 20px 0px;
+  gap: 4px;
+}
+.headingSummery p {
+  font-size: 16px;
+}
+.subTotal,
+.shippingSummery,
+.discountSummery {
+  font-size: 13px;
+}
+.longline {
+  height: 1px;
+  width: 100%;
+  background-color: #eee;
+  margin: 13px 0px;
+}
+.buttonSummery button {
+  background-color: #ae674c !important;
+  border: 1px solid #ae674c;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+}
+.totalSummery {
+  margin-bottom: 3px;
+}
+.shippingSummery,
+.subTotal,
+.discountSummery {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  height: 25px;
+  display: flex;
+  width: 100%;
+}
+.mysvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.greendis p {
+  color: #198754;
+}

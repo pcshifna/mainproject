@@ -1,0 +1,26 @@
+.Line1 {
+  width: 250px;
+  height: 5px;
+  background-color: #b97628;
+}
+.Line2 {
+  width: 250px;
+  height: 5px;
+  background-color: #212124;
+}
+.lines {
+  display: flex;
+}
+.qualityHead {
+  font-size: 28px;
+  width: 100%;
+  height: 300px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourColumn {
+  height: 9445px;
+  width: 100%;
+}
