@@ -1,10 +1,5 @@
-import React from "react";
 import style from "./Home.module.css";
-import Shipment from "../../assets/shipment.svg";
-import slid2 from "../../assets/slid2.jpg";
-import slid3 from "../../assets/slid3.jpg";
-import slid4 from "../../assets/slid4.jpeg";
-import slid1 from "../../assets/slide1.jpeg";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperComponent from "../../COMPONENTS/swiperComponent/index.jsx";
 // Import Swiper styles
@@ -14,21 +9,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import MaskGroup147 from "../../assets//Mask Group 147@2x.png";
 import Image150 from "../../assets/Image 150@2x.png";
-import Slicebred from "../../assets/slicebread.jpg";
+import MostPopular from "../../COMPONENTS/Most popular products/index";
 import Image149 from "../../assets//Image 149@2x.png";
-import Bread from "../../assets/Bread.jpg";
-import FlatBread from "../../assets/FlatBread.jpg";
-import Confectionery from "../../assets/Confectionery.jpg";
-import GlutenFree from "../../assets/GlutenFree.jpg";
-import Cakes from "../../assets/Cakes.jpg";
-import Delicay from "../../assets/Delicacy.jpg";
-import Frozen from "../../assets/Frozen.jpg";
-import Philipino from "../../assets/Philipino.jpg";
-import Sandwitch from "../../assets/Sandwitch.jpg";
-import Sweets from "../../assets/Sweets.jpg";
+import Axios from "axios";
 import HomePageStatic from "../../assets/home-page-static.png";
 import Ducemlogo400 from "../../assets/ducem-logo-400x150@2x.png";
-import PageBread from "../Bread/index";
+
 // import required modules
 import {
   Navigation,
@@ -37,51 +23,21 @@ import {
   Keyboard,
   Autoplay,
 } from "swiper/modules";
+import { useEffect, useState } from "react";
 
-const Home = () => {
-  const imageTitle = [
-    {
-      image: Bread,
-      title: "Bread",
-      href: "Home/category/PageBread",
-    },
-    {
-      image: FlatBread,
-      title: "Flat Bread",
-    },
-    {
-      image: Confectionery,
-      title: "Confectionery",
-    },
-    {
-      image: GlutenFree,
-      title: "Gluten Free",
-    },
-    {
-      image: Cakes,
-      title: "Cakes",
-    },
-    {
-      image: Delicay,
-      title: "Delicay",
-    },
-    {
-      image: Frozen,
-      title: "Frozen",
-    },
-    {
-      image: Philipino,
-      title: "Philipino",
-    },
-    {
-      image: Sandwitch,
-      title: "Sandwitch",
-    },
-    {
-      image: Sweets,
-      title: "Sweeets",
-    },
-  ];
+const Home = ({ homeData }) => {
+ 
+  const [activeButtonId, setActiveButtonId] = useState("");
+
+  const [fetchProduct, setFetchProduct] = useState([]);
+  useEffect(() => {
+    Axios.get("https://api.goldenloafuae.com/api/home").then((res) => {
+      setFetchProduct(res?.data?.popularProducts);
+      setActiveButtonId(res?.data?.popularProducts[0]?._id);
+    });
+  }, []);
+
+  
 
   return (
     <div className={style.home}>
@@ -98,27 +54,22 @@ const Home = () => {
             button: true,
           }}
         >
-          <SwiperSlide>
-            <img src={slid1} height={250}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slid2}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slid3}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slid4}></img>
-          </SwiperSlide>
+          {homeData?.banners?.slice(0, 4)?.map((banner) => (
+            <SwiperSlide key={banner._id}>
+              <img
+                src={`https://api.goldenloafuae.com/${banner?.images?.web}`}
+                alt="Banner Image"
+              ></img>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
+
       <div className={style.swiper2}>
         <p className={style.swiperp}>Our Categories</p>
 
         <Swiper
-          
           direction={"horizontal"}
-          
           navigation={true}
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
@@ -127,20 +78,15 @@ const Home = () => {
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true, button: true }}
         >
-          {imageTitle?.map((item, index) => (
-            <SwiperSlide key={index}>
+          {homeData?.categories?.map((category) => (
+            <SwiperSlide key={category?._id}>
               <div className={style.card}>
-                <SwiperComponent data={item} />
+                <SwiperComponent data={category} />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-
-
-
-
-
 
       <div className={style.shipparent}>
         <div className={style.delivery}>
@@ -380,11 +326,36 @@ const Home = () => {
       <div className={style.mostpopular}>
         <div className={style.headingbutton}>
           <p>MOST POPULAR PRODUCTS</p>
-          <button>Bread</button>
         </div>
-
-        <img src={Slicebred} alt="" />
-        <div className={style.headingbutton}></div>
+      
+        <div className={style.popularbutton}>
+          {fetchProduct?.map((category) => (
+            <div
+              key={category?._id}
+              className={
+                activeButtonId === category?._id
+                  ? style["active"]
+                  : style["popularbutton"]
+              }
+            >
+              <button onClick={() => setActiveButtonId(category?._id)}>
+                {category?.name}
+              </button>
+            </div>
+          ))}
+        </div>
+       
+        <div className={style.fullCard}>
+          {fetchProduct
+            ?.find((item) => item._id === activeButtonId)
+            ?.products?.map((mostpopular) => (
+             
+              <div className={style.newItem} key={mostpopular._id}>
+                 <MostPopular data={mostpopular} />
+                
+              </div>
+            ))}
+        </div>
       </div>
 
       <div className={style.otherGolden}>

@@ -48,3 +48,13 @@
   cursor: pointer;
   background-color: #ae674c;
 }
+.categoryName {
+  text-transform: lowercase;
+}
+.categoryName::first-letter {
+  text-transform: capitalize;
+}
+.categoryName a {
+  text-decoration: none;
+  color: black;
+}

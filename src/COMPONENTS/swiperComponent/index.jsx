@@ -1,18 +1,22 @@
-import React from "react";
+
 import style from "./Swipercomponent.module.css";
 import { Link } from "react-router-dom";
-const swiperComponent = (props) => {
+const swiperComponent = ({ data }) => {
   return (
-    
-    <div className={style.full}>
-      <div className={style.swiperParent}>
-        <img src={props?.data?.image} />
+    <>
+     
+      <div className={style.full}>
+        <div className={style.swiperParent}>
+          <img
+            src={`https://api.goldenloafuae.com/${data.images?.menuthumbnail}`}
+          />
+        </div>
+        <div className={style.categoryName}>
+          <Link to={`/categories/${data?._id}`}>{data.name}</Link>
+        </div>
+        <div className={style.square}></div>
       </div>
-      
-      <Link to={props?.data?.href} style={{textDecoration:"none"}}>{props?.data?.title}</Link>
-
-      <div className={style.square}></div>
-    </div>
+    </>
   );
 };
 

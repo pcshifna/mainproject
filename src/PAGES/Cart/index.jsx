@@ -55,7 +55,7 @@ const Cart = () => {
 
     setsubTotal(total);
   }, [product]);
-  console.log(product);
+
   return (
     <div className={style.alignment}>
       <div className={style.mainCart}>
@@ -65,7 +65,9 @@ const Cart = () => {
           <div className={style.cartBox} key={pro.code}>
             <div className={style.imageSide}>
               <div className={style.productImage}>
-                <img src={pro.productimage} />
+                <img
+                  src={`https://api.goldenloafuae.com/${pro?.images?.mainimage} `}
+                />
               </div>
               <div className={style.buttons}>
                 <button

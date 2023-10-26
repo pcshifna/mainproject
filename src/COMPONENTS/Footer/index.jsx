@@ -1,20 +1,17 @@
 import React from "react";
-import style from "./Footer.module.css";
-import logo from "../../assets/backlogo.svg";
 import { Link } from "react-router-dom";
-const Footer = () => {
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+import logo from "../../assets/backlogo.svg";
+import style from "./Footer.module.css";
+
+const Footer = ({ categories }) => {
   return (
     <div className={style.mainfooter}>
+      
       <div className={style.footer}>
         <div className={style.leftSide}>
           <img src={logo} width={200} height={55} />
           <p className={style.firstp}> Al Wahda Street, Sharjah</p>
           <p className={style.secondp}>
-            {" "}
             Call : +971 6 5336677, +97150 736 5121
           </p>
           <p className={style.thirdp}>Mail:salesgle@goldenloafuae.com</p>
@@ -196,21 +193,18 @@ const Footer = () => {
           <div className={style.categories}>
             <p className={style.big}>Categories</p>
 
-            <Link to="Home/category/PageBread" onClick={() => topFunction}>
-              Bread
-            </Link>
-            <p className={style.firstcenter}> </p>
-            <p className={style.seccenter}>Flat Bread </p>
-            <div className={style.thdcenter}>
-              <Link
-                to="Home/Categories/Confectionery"
-                onClick={() => topFunction}
-              >
-                Confectionery
-              </Link>
-            </div>
-            <p className={style.fourcenter}> Gluten Free </p>
-            <p className={style.fifcenter}>Cakes</p>
+            {/* <Link to="Home/category/PageBread">Bread</Link>
+              <p className={style.firstcenter}> </p>
+            <p className={style.seccenter}>Flat Bread </p> */}
+            {categories?.slice(0, 5)?.map((category) => (
+              <div className={style.thdcenter} key={category?._id}>
+                <Link to={`/categories/${category?._id}`}>
+                  {category?.name}
+                </Link>
+              </div>
+            ))}
+            {/* <p className={style.fourcenter}> Gluten Free </p>
+              <p className={style.fifcenter}>Cakes</p> */}
           </div>
 
           <div className={style.usefullLinks}>

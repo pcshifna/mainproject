@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.14.6",
     "@mui/material": "^5.14.7",
     "antd": "^5.8.5",
+    "axios": "^1.5.1",
     "bootstrap": "^5.3.1",
     "hover-carousel": "^1.1.0",
     "react": "^18.2.0",

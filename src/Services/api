@@ -1,0 +1,7 @@
+import react,{Component} from "react"
+
+
+
+    axios.get("https://api.goldenloafuae.com/api/products");
+    
+
