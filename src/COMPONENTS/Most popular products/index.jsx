@@ -33,7 +33,7 @@ const Populur = ({ data }) => {
         return prevstate;
       } else {
         return {
-          products: [...prevstate.products, { data, count: 1 }],
+          products: [...prevstate.products, { ...data, count: 1 }],
           totalCount: prevstate.totalCount + 1,
         };
       }
