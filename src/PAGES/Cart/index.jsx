@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { AllClickedProdut } from "../../App";
 import Movetowishlist from "../../assets/Move_to_wishlist.svg";
 import Delete from "../../assets/Delete.svg";
-
+import Emptycart from "../../assets/emptycart.jpg";
 const Cart = () => {
   const [subtotal, setsubTotal] = useState(0);
   var { product, setProduct } = useContext(AllClickedProdut);
@@ -58,63 +58,76 @@ const Cart = () => {
 
   return (
     <div className={style.alignment}>
-      <div className={style.mainCart}>
-        {/* product.filter( (item) => item.code !==  ) */}
-        <h4> cart ({product.totalCount}items)</h4>
-        {product?.products?.map((pro) => (
-          <div className={style.cartBox} key={pro?._id}>
-            <div className={style.imageSide}>
-              <div className={style.productImage}>
-                <img
-                  src={`https://api.goldenloafuae.com/${pro?.images?.mainimage} `}
-                />
-              </div>
-              <div className={style.buttons}>
-                <button type="submit" onClick={() => increaseQuantity(pro)}>
-                  +
-                </button>
-                <p>{pro.count}</p>
-                <button type="submit" onClick={() => decreaseQuantity(pro)}>
-                  -
-                </button>
-              </div>
-            </div>
-            <div className={style.productDescription}>
-              <div className={style.productTitle}>
-                <p>{pro.name}</p>
-              </div>
-              <div className={style.productQuantity}>
-                <p>Qty:{pro.count}</p>
-              </div>
-              <div className={style.unitPrice}>
-                <div className={style.firstP}>
-                  <p>unit price: AED {pro.price}</p>
+      {product.totalCount === 0 ? (
+        <div className={style.cart_Empty}>
+          <img src={Emptycart} alt="Cart is empty" />
+          <p>Your cart is empty</p>
+        </div>
+      ) : (
+        <div className={style.mainCart}>
+          {/* product.filter( (item) => item.code !==  ) */}
+          <h4> cart ({product.totalCount}items)</h4>
+          {product?.products?.map((pro) => (
+            <div className={style.cartBox} key={pro?._id}>
+              <div className={style.imageSide}>
+                <div className={style.productImage}>
+                  <img
+                    src={`https://api.goldenloafuae.com/${pro?.images?.mainimage} `}
+                  />
                 </div>
-              </div>
-              <div className={style.totalPrice}>
-                <p>
-                  <b>AED{(pro.count * pro.price).toFixed(2)}</b>
-                </p>
-              </div>
-              <div className={style.rowWishlist}>
-                <div className={style.wishlist}>
-                  <button type="submit">
-                    <img src={Movetowishlist} /> move to wishlist
+                <div className={style.buttons}>
+                  <button type="submit" onClick={() => increaseQuantity(pro)}>
+                    +
                   </button>
-                </div>
-                <div className={style.standLine}></div>
-                <div className={style.delete}>
-                  <button type="submit" onClick={() => handleDelete(pro)}>
-                    <img src={Delete} />
-                    delete
+                  <p>{pro.count}</p>
+                  <button type="submit" onClick={() => decreaseQuantity(pro)}>
+                    -
                   </button>
                 </div>
               </div>
+              <div className={style.productDescription}>
+                <div className={style.productTitle}>
+                  <p>{pro.name}</p>
+                </div>
+                <div className={style.productQuantity}>
+                  <p>Qty:{pro.count}</p>
+                </div>
+                <div className={style.unitPrice}>
+                  <div className={style.firstP}>
+                    <p>unit price: AED {pro.price}</p>
+                  </div>
+                </div>
+                <div className={style.totalPrice}>
+                  <p>
+                    <b>AED{(pro.count * pro.price).toFixed(2)}</b>
+                  </p>
+                </div>
+                <div className={style.rowWishlist}>
+                  <div className={style.wishlist}>
+                    <button type="submit">
+                      <img src={Movetowishlist} /> move to wishlist
+                    </button>
+                  </div>
+                  <div className={style.standLine}></div>
+                  <div className={style.delete}>
+                    <button type="submit" onClick={() => handleDelete(pro)}>
+                      <img src={Delete} />
+                      delete
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className={style.orderSummary}>
+          ))}
+        </div>
+      )}
+      <div
+        className={
+          product.totalCount === 0
+            ? style["orderSummarytop"]
+            : style["orderSummary"]
+        }
+      >
         <div className={style.headingSummery}>
           <p>Oder summary</p>
         </div>

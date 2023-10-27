@@ -1,55 +1,80 @@
 .wishlistPage {
-	
-display: flex;
-    
+  display: flex;
+  padding: 20px 50px;
 }
 
 .left_Side_Of_Whishlist {
-	
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.161);
+  padding: 25px;
+  height: 320px;
+  width: 359px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-    
+  box-sizing: border-box;
 }
 
- .user_Section{
-	
+.user_Section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.user_Icon{
-
+.user_Icon {
+  border-radius: 50%;
+  background-color: rgba(154, 148, 148, 0.905);
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
 }
-.user{
+.left_Side_Of_Whishlist p {
+  font-size: 15px;
 
+  font-weight: lighter;
 }
-.long_Line{
-
+.long_Line {
+  width: 307px;
+  height: 0.8px;
+  background-color: rgba(0, 0, 0, 0.06);
 }
-.order_section{
-
+.order_section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.orders{
-
+.orders {
 }
-.order_Arrow{
-
+.order_Arrow button {
+  border: none;
+  background: white;
 }
-.account_Settings_Section{
-
+.account_Settings_Section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.account{
-
+.account {
 }
-.account_Arrow{
-
+.account_Arrow button {
+  border: none;
+  background: white;
 }
-.whishlist_Section{
-
+.whishlist_Section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.whishlist_word{
-
+.whishlist_word {
+  color: #684f40;
 }
-.whishlist_Arrow{
-
+.whishlist_Arrow button {
+  border: none;
+  background: white;
 }
-.logout{
-    
+.logout p {
+  padding-top: 10px;
+  display: flex;
+  color: #684f40;
+  justify-content: center;
 }

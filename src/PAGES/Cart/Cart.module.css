@@ -1,3 +1,20 @@
+.cart_Empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 200px;
+
+  padding-right: 20px;
+
+  width: 70%;
+}
+.cart_Empty img {
+  width: 252px;
+  height: 294px;
+}
+
 .alignment {
   width: 100%;
   height: auto;
@@ -108,9 +125,20 @@
   flex-direction: column;
   border: 1px solid #eee;
   padding: 20px;
-  margin: 40px 20px 0px;
+  margin: 40px 20px;
   gap: 4px;
 }
+.orderSummarytop {
+  width: 30%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin: 0px 20px;
+  gap: 4px;
+}
+
 .headingSummery p {
   font-size: 16px;
 }
