@@ -15,6 +15,7 @@ import React from "react";
 import Categories from "./COMPONENTS/Categories/index";
 import axios from "axios";
 import Product from "./COMPONENTS/Product/Product";
+import Wishlist from "./COMPONENTS/Wishlist/index";
 export const AllClickedProdut = React.createContext();
 export const AllMenuContext = React.createContext();
 export const AllWishlistProduct = React.createContext();
@@ -50,7 +51,8 @@ function App() {
 
                 <Route path="Home/category/PageBread" element={<Bread />} />
                 <Route path="categories/:categoryid" element={<Categories />} />
-                <Route path="product/:slugname" element={<Product />}></Route>
+                <Route path="/whishlist" element={<Wishlist />} />
+                <Route path="product/:slugname" element={<Product />} />
               </Routes>
 
               <Footer categories={homeData?.categories} />

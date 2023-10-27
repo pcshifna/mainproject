@@ -13,11 +13,12 @@ import { useState } from "react";
 import { Badge, Space } from "antd";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiSearchAlt2 } from "react-icons/bi";
-
+import { AllWishlistProduct } from "../../App";
 import { AllClickedProdut } from "../../App";
 import { useContext } from "react";
 
 const Navbar = () => {
+  const { wishlist } = useContext(AllWishlistProduct);
   const [open, setOpen] = useState(false);
   const [value, SetValue] = useState();
   // const [isvalue, SetisValue] = useState(false);
@@ -78,35 +79,37 @@ const Navbar = () => {
             </div>
 
             <div className={style.heart}>
-              <button type="button" onClick={handleOpen}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25.825"
-                  viewBox="0 0 30.113 25.825"
-                >
-                  <g id="wish_list" transform="translate(0.75 0.75)">
-                    <g
-                      id="Group_2422"
-                      data-name="Group 2422"
-                      transform="translate(0 0)"
-                    >
-                      <g id="Group_2421" data-name="Group 2421">
-                        <path
-                          id="Path_6178"
-                          data-name="Path 6178"
-                          d="M1901.875,506.284a7.935,7.935,0,0,0-11.287-.065l-.774.774-.774-.774a7.936,7.936,0,1,0-11.222,11.223l9.918,9.918a2.943,2.943,0,0,0,4.156,0l9.854-9.853A8.009,8.009,0,0,0,1901.875,506.284Z"
-                          transform="translate(-1875.493 -503.895)"
-                          fill="none"
-                          stroke="#505555"
-                          strokeLinecap="round"
-                          strokeWidth="1.5"
-                        />
+              <Link to="/whishlist">
+                <button type="button" onClick={handleOpen}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25.825"
+                    viewBox="0 0 30.113 25.825"
+                  >
+                    <g id="wish_list" transform="translate(0.75 0.75)">
+                      <g
+                        id="Group_2422"
+                        data-name="Group 2422"
+                        transform="translate(0 0)"
+                      >
+                        <g id="Group_2421" data-name="Group 2421">
+                          <path
+                            id="Path_6178"
+                            data-name="Path 6178"
+                            d="M1901.875,506.284a7.935,7.935,0,0,0-11.287-.065l-.774.774-.774-.774a7.936,7.936,0,1,0-11.222,11.223l9.918,9.918a2.943,2.943,0,0,0,4.156,0l9.854-9.853A8.009,8.009,0,0,0,1901.875,506.284Z"
+                            transform="translate(-1875.493 -503.895)"
+                            fill="none"
+                            stroke="#505555"
+                            strokeLinecap="round"
+                            strokeWidth="1.5"
+                          />
+                        </g>
                       </g>
                     </g>
-                  </g>
-                </svg>
-              </button>
+                  </svg>
+                </button>
+              </Link>
             </div>
           </div>
           <div className={style.cartwrap}>
