@@ -9,12 +9,12 @@ const Cart = () => {
   var { product, setProduct } = useContext(AllClickedProdut);
   const handleDelete = (pro) => {
     setProduct((preData) => ({
-      products: preData?.products?.filter((item) => item.code !== pro.code),
+      products: preData?.products?.filter((item) => item._id !== pro._id),
       totalCount: preData.totalCount - 1,
     }));
   };
 
-  const increaseQuantity = (code) => {
+  const increaseQuantity = (pro) => {
     // setProduct(prevState=>{
     //   let productIndex=prevState?.products?.findOndex(product=>product.code===code)
     //   if (productIndex!==-1) {
@@ -26,16 +26,16 @@ const Cart = () => {
     // })
     setProduct((preData) => ({
       products: preData?.products?.map((pr) =>
-        pr.code === code ? { ...pr, count: pr.count + 1 } : { ...pr }
+        pr._id === pro?._id ? { ...pr, count: pr.count + 1 } : { ...pr }
       ),
       totalCount: preData.totalCount,
     }));
   };
 
-  const decreaseQuantity = (code) => {
+  const decreaseQuantity = (pro) => {
     setProduct((preData) => ({
       products: preData?.products?.map((item) =>
-        item.code === code && item.count > 1
+        item?._id === pro?._id && item.count > 1
           ? { ...item, count: item.count - 1 }
           : { ...item }
       ),
@@ -62,7 +62,7 @@ const Cart = () => {
         {/* product.filter( (item) => item.code !==  ) */}
         <h4> cart ({product.totalCount}items)</h4>
         {product?.products?.map((pro) => (
-          <div className={style.cartBox} key={pro.code}>
+          <div className={style.cartBox} key={pro?._id}>
             <div className={style.imageSide}>
               <div className={style.productImage}>
                 <img
@@ -70,17 +70,11 @@ const Cart = () => {
                 />
               </div>
               <div className={style.buttons}>
-                <button
-                  type="submit"
-                  onClick={() => increaseQuantity(pro.code)}
-                >
+                <button type="submit" onClick={() => increaseQuantity(pro)}>
                   +
                 </button>
                 <p>{pro.count}</p>
-                <button
-                  type="submit"
-                  onClick={() => decreaseQuantity(pro.code)}
-                >
+                <button type="submit" onClick={() => decreaseQuantity(pro)}>
                   -
                 </button>
               </div>
