@@ -12,7 +12,7 @@ import Image150 from "../../assets/Image 150@2x.png";
 import MostPopular from "../../COMPONENTS/Most popular products/index";
 import Image149 from "../../assets//Image 149@2x.png";
 import Axios from "axios";
-import HomePageStatic from "../../assets/home-page-static.png";
+import HomePageStatic from "../../assets/bigimagehome.jpg";
 import Ducemlogo400 from "../../assets/ducem-logo-400x150@2x.png";
 
 // import required modules
@@ -26,7 +26,6 @@ import {
 import { useEffect, useState } from "react";
 
 const Home = ({ homeData }) => {
- 
   const [activeButtonId, setActiveButtonId] = useState("");
 
   const [fetchProduct, setFetchProduct] = useState([]);
@@ -36,8 +35,6 @@ const Home = ({ homeData }) => {
       setActiveButtonId(res?.data?.popularProducts[0]?._id);
     });
   }, []);
-
-  
 
   return (
     <div className={style.home}>
@@ -327,7 +324,7 @@ const Home = ({ homeData }) => {
         <div className={style.headingbutton}>
           <p>MOST POPULAR PRODUCTS</p>
         </div>
-      
+
         <div className={style.popularbutton}>
           {fetchProduct?.map((category) => (
             <div
@@ -344,15 +341,13 @@ const Home = ({ homeData }) => {
             </div>
           ))}
         </div>
-       
+
         <div className={style.fullCard}>
           {fetchProduct
             ?.find((item) => item._id === activeButtonId)
             ?.products?.map((mostpopular) => (
-             
               <div className={style.newItem} key={mostpopular._id}>
-                 <MostPopular data={mostpopular} />
-                
+                <MostPopular data={mostpopular} />
               </div>
             ))}
         </div>
