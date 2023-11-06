@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <div className={style.mail}>
           <AiOutlineMail size={14} />
-          <p>salesgle@goldenloafuae.com</p>
+          <p>pcshifna12@gmail.com</p>
         </div>
       </div>
 
