@@ -12,7 +12,7 @@ import Image150 from "../../assets/Image 150@2x.png";
 import MostPopular from "../../COMPONENTS/Most popular products/index";
 import Image149 from "../../assets//Image 149@2x.png";
 import Axios from "axios";
-import HomePageStatic from "../../assets/bigimagehome.jpg";
+import HomePageStatic from "../../assets/home-page-static.png";
 import Ducemlogo400 from "../../assets/ducem-logo-400x150@2x.png";
 
 // import required modules
