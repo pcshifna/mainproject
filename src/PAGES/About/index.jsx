@@ -44,25 +44,15 @@ const About = () => {
             <p>OUR PASSION – QUALITY BAKED PRODUCTS</p>
           </div>
           <p>
-            A pioneer in the bakery industry, Golden Loaf Est. was established
-            in the year 1979 with a single minded pursuit of providing best
-            quality bread and baked products. Our extensive range of bread and
-            confectionery products includes speciality breads like Arabic brown
-            bread, Indian pav and Gluten-free products too.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus alias ex modi? Deleniti impedit ad magni dolores officia, quasi iusto voluptates fugit rem odit distinctio nemo hic maxime neque?
+            Fuga maxime veniam delectus officia possimus dolore sequi expedita saepe dignissimos nisi alias consequatur natus odit rem qui ipsam quidem voluptatem, beatae provident, quae nulla adipisci soluta. Est, accusamus corporis.
           </p>
           <p>
-            Our world class bakery facility is well equipped with advanced
-            German machinery. Our dedicated staff of 300 personnel is trained by
-            experience from top experts in the baking industry from Europe and
-            other Western countries. Golden Loaf Est., and its sister concern,
-            Golden Spike & Wheat Est., have the most extensive distribution
-            network with a fleet of vehicles that daily cater to the needs of
-            the UAE’s multinational/multiracial society, ensure highest standard
-            of products reach your table.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus tempora laborum nostrum nemo expedita esse quis saepe magni cupiditate, doloremque eligendi quae quibusdam distinctio in iusto, odit, numquam iure.
+            Quo temporibus impedit vitae, distinctio ipsa vero praesentium corporis voluptatum dicta repudiandae facere eius quidem aut at dolore et? Corrupti debitis nesciunt voluptates quae dolore, animi provident ut accusantium similique!
           </p>
           <p>
-            Drop in at our spacious showroom and coffee shop to taste our
-            variety of products in Al Wahda Street near Sharjah City Center.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium ea, eos quam aperiam obcaecati quis optio nobis pariatur. Perferendis nemo eligendi sequi nesciunt at praesentium sunt dolores provident dignissimos!
           </p>
         </div>
         <div className={style.rightPassion}>
@@ -80,24 +70,17 @@ const About = () => {
           </div>
           <div className={style.contents}>
             <p>
-              Golden Loaf Est. is the first of establishment in the UAE bakery
-              industry to achieve quality and safety standards by International
-              Organization for Standardization (ISO 9001:2008) and Codex
-              Alimentarious Commission guidelines for the application of Hazard
-              Analysis and Critical Control Point (HACCP) system.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta amet beatae tempora quidem repellat, nulla voluptatibus illum debitis quasi consequatur, similique totam temporibus. At suscipit, reprehenderit dicta ducimus accusantium deleniti?
+              Iure labore cupiditate ut harum, soluta distinctio, aliquid quam qui eaque, optio modi consectetur inventore earum et! Mollitia culpa id debitis dolore, suscipit, aliquid dicta et modi magni, cupiditate eaque!
             </p>
             <p>
-              Our products are put to various quality tests at multiple levels
-              of production that are accomplished by qualified and competent
-              food technologists. This ensures that health and hygiene standards
-              are strictly followed to deliver superior quality products.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi neque facilis minus in hic nostrum quod laborum dolorem tempore incidunt vero ad, provident dolor cum. Non unde ipsum vitae illo!
             </p>
           </div>
           <p className={style.commitmentSecondHeading}>OUR QUALITY STANDARDS</p>
           <div className={style.secondCommitmentFull}>
             <p className={style.upper}>
-              Our highest priority is customer satisfaction and we are committed
-              to quality in every aspect of operation, including:
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facere nesciunt eius iure illo asperiores tempore corrupti aliquid esse ratione aliquam suscipit praesentium nulla, error alias libero. Sapiente, fugit ab?:
             </p>
             <div className={style.firstPoint}>
               <div className={style.squareColorsBlack}>
@@ -185,9 +168,7 @@ const About = () => {
           <p className={style.commitmentThdHeading}>OUR NEXT STEPS </p>
           <div className={style.secondCommitmentFull}>
             <p>
-              Golden Loaf Est. has now embarked on another journey by earmarking
-              2020 to increase its customer base by growing its penetration in
-              the corporate sector. Contact us to know more.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora veniam placeat rem nobis hic doloremque, quibusdam dicta error eius animi quasi autem earum ducimus! Quos optio eius quis non?
             </p>
           </div>
         </div>
@@ -209,21 +190,9 @@ const About = () => {
             MESSAGE FROM OUR FOUNDER / MD
           </p>
           <p className={style.messageFromFounderContents}>
-            I take this opportunity to express my sincere thanks to our
-            established clients and indeed to all our customers, whose support
-            has enabled us to progress and achieve continued success. Our
-            establishment is unique in the sense that the knowledge to operate a
-            successful food factory has been obtained from several countries.
-            The art of manufacturing excellent breads and confectionery is the
-            hobby of those who desire to remain in the forefront. It is also the
-            result of seeking only the best of those craftsmen conversant in the
-            trade to produce quality rather than quantity. We think we are
-            unique because we aim to improve on a day-to-day basis. The proof is
-            in our successful efforts in obtaining the different certifications
-            such as ISO and HACCP. These are the manifestation on achievement.
-            We look to the future with confidence and promise. Our hope is
-            always to expand and provide to the UAE public the best services
-            that we can offer. M.S. Al Husseiny
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias ad explicabo magnam, iste nisi veniam, deleniti laudantium aliquid earum enim incidunt ullam est assumenda repudiandae in molestias, vel perspiciatis.
+           Delectus ut praesentium dolore nisi nam amet unde sint magnam culpa, veniam quae repudiandae deleniti voluptates illum excepturi voluptas rerum natus quod porro odio officiis saepe vero. Numquam, nihil deserunt!
+           Quidem veritatis commodi quibusdam tempore, repellat accusantium incidunt doloremque voluptatum, nisi deserunt voluptas consectetur sit reprehenderit quaerat quas a quae! Inventore rem perferendis ipsa dolor unde iure doloribus voluptatum doloremque.
           </p>
         </div>
         <div className={style.messageFromFounderRight}></div>

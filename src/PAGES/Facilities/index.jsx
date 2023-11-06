@@ -21,12 +21,8 @@ const Facilities = () => {
         <div className={style.briefLeft}>
           <p className={style.briefLeftHead}>WHERE WE BAKE AND CAKE</p>
           <p>
-            Our service is to maintain the quality of its products through
-            selecting the best base ingredients and raw materials, improving the
-            industry to satisfy its clients, and to serve them faster by using
-            modern packaging techniques, and continuing to maintain its artistic
-            and traditional handcraft through choosing qualified and experienced
-            employees.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero atque odit neque, laboriosam possimus ut in provident doloribus accusamus quam vero sint aperiam, id labore sapiente consectetur quisquam reprehenderit nesciunt!
+            Explicabo eos molestias ea vitae nisi, hic dolor nesciunt facilis consequuntur delectus nobis dolore, similique omnis cum a earum adipisci accusamus ex nulla magnam voluptate? Quaerat corporis officia numquam facilis.
           </p>
         </div>
         <div className={style.brieRight}>
@@ -40,15 +36,8 @@ const Facilities = () => {
         <div className={style.hyginRight}>
           <p className={style.hyginRightHead}>HYGIENE</p>
           <p>
-            Over the past four decades Golden Loaf Est. is nourishing different
-            generations with varieties of bakery products under hazard free
-            environment. Hygiene is the paramount element in our working
-            environment to produce high standard and quality products. We
-            designed our production cycle by establishing Hazard Analysis and
-            Critical Control Point system. (HACCP). Our products are made
-            through advanced and calibrated machinery under strict supervision,
-            complying with the quality specifications and the requirements of
-            International Standard ISO 22000:2018
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quae voluptate in ipsam, rerum nulla minus nihil est, neque sapiente porro corrupti id ipsum odit eos necessitatibus error facere sunt.
+            Voluptates blanditiis magnam eveniet totam ut ex, hic, itaque odit alias asperiores tenetur rem nulla consequatur repellat quaerat architecto adipisci iusto quibusdam. Odit nesciunt consectetur ipsam quisquam deserunt labore dolor?
           </p>
         </div>
       </div>
