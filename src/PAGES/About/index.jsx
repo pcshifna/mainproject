@@ -237,7 +237,7 @@ const About = () => {
           <div className={style.team1}>
             <img src={Osamaim} />
           </div>
-          <p className={style.colorName}>Mustafa Al Husseiny </p>
+          <p className={style.colorName}>SHIFNA PC </p>
           <p className={style.nocolor}>
             <b>General Manager</b>
           </p>
@@ -246,7 +246,7 @@ const About = () => {
           <div className={style.team1}>
             <img src={Osama} />
           </div>
-          <p className={style.colorName}>Osama Al Husseiny</p>
+          <p className={style.colorName}>SHIFNA PC</p>
           <p className={style.nocolor}>
             <b> Trade Manager</b>
           </p>
