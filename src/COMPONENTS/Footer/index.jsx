@@ -9,7 +9,7 @@ const Footer = ({ categories }) => {
       <div className={style.footer}>
         <div className={style.leftSide}>
           <img src={logo} width={200} height={55} />
-          <p className={style.firstp}> Al Wahda Street, Sharjah</p>
+          <p className={style.firstp}> Malappuram, Kerala</p>
           <p className={style.secondp}>Call : +91 9567683048, +971522958512</p>
           <p className={style.thirdp}>Mail:pcshifna12@gmail.com</p>
           <div className={style.socialmedia}>
