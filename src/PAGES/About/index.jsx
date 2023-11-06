@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./About.module.css";
-import Osamaim from "../../assets/osama1.jpeg";
-import Osama from "../../assets/osama.jpeg";
+import Osamaim from "../../assets/founder1.jpg";
+import Osama from "../../assets/founder1.jpg";
 import Passion from "../../assets/passion.jpeg";
 import Webp from "../../assets/webp.webp";
 import MyBackground from "../../assets/bg-2.jpg";
@@ -20,7 +20,7 @@ import {
   Autoplay,
 } from "swiper/modules";
 
-import GoldenFounder from "../../assets/Golden Loaf M.S. Al Husseiny.jpeg";
+import GoldenFounder from "../../assets/founder1.jpg";
 import CommonBackgroundImage from "../../COMPONENTS/commonBackgroundImage/index";
 
 const About = () => {
