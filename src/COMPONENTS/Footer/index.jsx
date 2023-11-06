@@ -6,15 +6,12 @@ import style from "./Footer.module.css";
 const Footer = ({ categories }) => {
   return (
     <div className={style.mainfooter}>
-      
       <div className={style.footer}>
         <div className={style.leftSide}>
           <img src={logo} width={200} height={55} />
           <p className={style.firstp}> Al Wahda Street, Sharjah</p>
-          <p className={style.secondp}>
-            Call : +971 6 5336677, +97150 736 5121
-          </p>
-          <p className={style.thirdp}>Mail:salesgle@goldenloafuae.com</p>
+          <p className={style.secondp}>Call : +91 9567683048, +971522958512</p>
+          <p className={style.thirdp}>Mail:pcshifna12@gmail.com</p>
           <div className={style.socialmedia}>
             <div className={style.fb}>
               <svg
