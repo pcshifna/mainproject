@@ -314,7 +314,7 @@ const Home = ({ homeData }) => {
           </svg>
           <div className={style.number}>
             <p>Customer Service </p>
-            <p>+9716-533-6677</p>
+            <p>+91 9567683048</p>
           </div>
         </div>
       </div>

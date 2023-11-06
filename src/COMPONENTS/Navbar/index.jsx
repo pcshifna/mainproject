@@ -40,7 +40,7 @@ const Navbar = () => {
           <p>For Help Call</p>
           <button>
             <img src={callIcon} width={18} height={18} />
-            +9716-533-6677
+            +91 9567683048
           </button>
         </div>
         <div className={style.mail}>

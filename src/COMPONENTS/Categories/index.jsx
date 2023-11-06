@@ -5,6 +5,10 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect ,useContext} from "react";
 import { Link } from "react-router-dom";
 import { AllClickedProdut } from "../../App";
+import { AllWishlistProduct } from "../../App";
+import Fav from "../../assets/Favorite.svg";
+
+import FavActive from "../../assets/fav-active.svg";
 const Categories = (props) => {
   const { categoryid } = useParams();
   const [itemlist, setItemList] = useState();
